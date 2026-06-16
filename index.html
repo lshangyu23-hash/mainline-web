@@ -17,7 +17,7 @@
         <a href="#how">How it works</a>
         <a href="#rhythm">Your rhythm</a>
       </nav>
-      <a class="header-action" href="#start">Start with today</a>
+      <a class="header-action" href="https://lshangyu23-hash.github.io/mainline-web/downloads/Mainline-Beta-Chrome-Extension.zip">Try beta</a>
     </header>
 
     <main>
@@ -37,9 +37,10 @@
           <p class="hero-question">Do you know what matters today?</p>
           <p class="hero-lead">Keep your life mainlines visible. Turn them into a few clear daily actions, without getting lost in information or an endless todo list.</p>
           <div class="hero-actions" aria-label="Explore Mainline">
-            <button class="primary-action" type="button" data-scroll-target="#how">Yes, keep me on track</button>
+            <a class="primary-action" href="https://lshangyu23-hash.github.io/mainline-web/downloads/Mainline-Beta-Chrome-Extension.zip">Yes, let me track today</a>
             <button class="text-action" type="button" data-scroll-target="#why">Show me how</button>
           </div>
+          <p class="hero-download-note">Beta download for Chrome. The Chrome Web Store link can replace this when the listing is live.</p>
         </div>
 
         <div class="hero-browser" aria-label="Animated Mainline extension preview">
@@ -62,12 +63,13 @@
             </div>
             <div class="demo-today">
               <div class="demo-today-head"><span>Today</span><strong>Jun 11</strong></div>
-              <label><input type="checkbox"><span>Finish the first draft</span><small>Creative work</small></label>
-              <label><input type="checkbox"><span>Walk after lunch</span><small>Health</small></label>
-              <label><input type="checkbox"><span>Call Dad tonight</span><small>People I love</small></label>
+              <label class="demo-row demo-row-check"><input type="checkbox"><span>Finish the first draft</span><small>Creative work</small></label>
+              <label class="demo-row"><input type="checkbox"><span>Walk after lunch</span><small>Health</small></label>
+              <label class="demo-row"><input type="checkbox"><span>Call Dad tonight</span><small>People I love</small></label>
               <div class="demo-quick">+ Add quick action</div>
             </div>
           </aside>
+          <span class="demo-cursor" aria-hidden="true"></span>
         </div>
 
         <a class="hero-next" href="#why">See the idea <span>↓</span></a>
@@ -172,29 +174,30 @@
         <div class="family-copy reveal">
           <p class="eyebrow">Mainline for family</p>
           <h2>Manage your work.<br>Help good habits grow.</h2>
-          <p>Profiles let one household use Mainline without mixing everyone's life together. Keep your own work and personal mainlines, then create a simple profile for a child to practice following their own daily direction.</p>
+          <p>Profiles let one person or one household use Mainline without mixing every role together. Keep a Work mode for office priorities, a Parent mode for home coordination, and a child profile for building simple daily habits.</p>
           <div class="family-profile-actions" aria-label="Profile management examples">
-            <button type="button" class="family-profile active" data-family-profile="parent"><span>P</span>Parent</button>
+            <button type="button" class="family-profile active" data-family-profile="work"><span>W</span>Work mode</button>
+            <button type="button" class="family-profile" data-family-profile="parent"><span>P</span>Parent</button>
             <button type="button" class="family-profile" data-family-profile="leo"><span>L</span>Leo, age 9</button>
             <button type="button" class="family-profile-add">+ New profile</button>
           </div>
-          <p class="family-note">Add, rename, or remove profiles as your household changes.</p>
+          <p class="family-note">Add, rename, or remove profiles as your work and family roles change.</p>
         </div>
 
-        <div class="family-demo reveal" data-family-view="parent">
+        <div class="family-demo reveal" data-family-view="work">
           <div class="family-demo-head">
-            <span class="family-avatar">P</span>
-            <div><strong id="family-name">Parent</strong><small id="family-description">Work and personal life</small></div>
+            <span class="family-avatar">W</span>
+            <div><strong id="family-name">Work mode</strong><small id="family-description">Office priorities, protected from home life</small></div>
             <button type="button" aria-label="Edit profile">✎</button>
           </div>
           <div class="family-mainlines" id="family-mainlines">
-            <div><span></span><p><strong>Launch proposal</strong><small>Review the final pricing page</small></p><em>Work</em></div>
-            <div><span></span><p><strong>Stay healthy</strong><small>Walk for thirty minutes</small></p><em>Health</em></div>
-            <div><span></span><p><strong>Family time</strong><small>Read with Leo after dinner</small></p><em>Home</em></div>
+            <div><span></span><p><strong>Client follow-up</strong><small>Send the decision summary before 3 PM</small></p><em>Office</em></div>
+            <div><span></span><p><strong>Deep work block</strong><small>Draft the ranking model memo</small></p><em>Focus</em></div>
+            <div><span></span><p><strong>Team rhythm</strong><small>Prepare tomorrow's standup notes</small></p><em>Team</em></div>
           </div>
           <div class="family-example">
             <span>Example</span>
-            <p id="family-example-text">A parent can keep a focused workday while remembering the small action that supports family life.</p>
+            <p id="family-example-text">Use Work mode during office hours so client follow-ups, deep work, and team commitments stay visible without mixing into family plans.</p>
           </div>
         </div>
       </section>
@@ -217,7 +220,7 @@
           <p class="eyebrow">Your life is more than a list</p>
           <h2>Ready to follow your mainline?</h2>
           <p>Begin with one direction that matters, and one action you can take today.</p>
-          <button class="primary-action" type="button" id="open-mainline">Open Mainline</button>
+          <a class="primary-action" id="open-mainline" href="https://lshangyu23-hash.github.io/mainline-web/downloads/Mainline-Beta-Chrome-Extension.zip">Open Mainline beta</a>
           <small>No new system to maintain. Just a clearer way back.</small>
         </div>
         <div class="start-mainline reveal" aria-hidden="true">

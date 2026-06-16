@@ -13,6 +13,8 @@ const modeContent = {
   }
 };
 
+const downloadUrl = "https://lshangyu23-hash.github.io/mainline-web/downloads/Mainline-Beta-Chrome-Extension.zip";
+
 document.querySelectorAll("[data-scroll-target]").forEach(button => {
   button.addEventListener("click", () => {
     document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: "smooth" });
@@ -45,15 +47,26 @@ const observer = new IntersectionObserver(entries => {
 document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
 
 const familyProfiles = {
+  work: {
+    name: "Work mode",
+    description: "Office priorities, protected from home life",
+    avatar: "W",
+    example: "Use Work mode during office hours so client follow-ups, deep work, and team commitments stay visible without mixing into family plans.",
+    mainlines: [
+      ["Client follow-up", "Send the decision summary before 3 PM", "Office"],
+      ["Deep work block", "Draft the ranking model memo", "Focus"],
+      ["Team rhythm", "Prepare tomorrow's standup notes", "Team"]
+    ]
+  },
   parent: {
     name: "Parent",
-    description: "Work and personal life",
+    description: "Home coordination and family rhythm",
     avatar: "P",
-    example: "A parent can keep a focused workday while remembering the small action that supports family life.",
+    example: "Parent mode can hold the small family actions that matter after work: dinner plans, school forms, and one meaningful moment with a child.",
     mainlines: [
-      ["Launch proposal", "Review the final pricing page", "Work"],
-      ["Stay healthy", "Walk for thirty minutes", "Health"],
-      ["Family time", "Read with Leo after dinner", "Home"]
+      ["Family time", "Read with Leo after dinner", "Home"],
+      ["Household admin", "Confirm Saturday practice pickup", "Plan"],
+      ["Stay healthy", "Walk for thirty minutes", "Health"]
     ]
   },
   leo: {
@@ -91,6 +104,6 @@ document.querySelector(".demo-today")?.addEventListener("change", event => {
   label.style.textDecoration = event.target.checked ? "line-through" : "";
 });
 
-document.querySelector("#open-mainline")?.addEventListener("click", () => {
-  window.close();
+document.querySelectorAll("[href$='Mainline-Beta-Chrome-Extension.zip']").forEach(link => {
+  link.setAttribute("href", downloadUrl);
 });

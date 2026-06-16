@@ -1410,6 +1410,63 @@ h2 {
   font-size: 12px;
 }
 
+.footer-links {
+  display: flex;
+  gap: 18px;
+  justify-self: end;
+}
+
+.policy-page {
+  min-height: 100vh;
+  padding: 132px clamp(24px, 8vw, 128px) 72px;
+  background: var(--paper);
+}
+
+.policy-card {
+  max-width: 860px;
+}
+
+.policy-card h1 {
+  margin-bottom: 24px;
+  font-size: clamp(48px, 7vw, 88px);
+  line-height: .95;
+}
+
+.policy-updated {
+  color: var(--green-deep);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.policy-card section {
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+}
+
+.policy-card h2 {
+  margin-bottom: 12px;
+  font-size: clamp(24px, 3vw, 34px);
+}
+
+.policy-card p,
+.policy-card li {
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.policy-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.policy-card a {
+  color: var(--green-deep);
+  font-weight: 700;
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -1598,6 +1655,10 @@ h2 {
     grid-template-columns: 1fr;
     gap: 12px;
     padding: 26px 20px;
+  }
+
+  .footer-links {
+    justify-self: start;
   }
 
   .site-footer img {
